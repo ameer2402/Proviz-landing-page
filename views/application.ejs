@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+   
+    <link rel="stylesheet" href="/css/main.css">    
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    
+     <!-- Check if an alert exists in the session and display it -->
+     <% if (alert) { %>
+        <div id="alert-message" class="alert alert-success">
+            <%= alert %>
+        </div>
+        
+        <!-- JavaScript to hide the alert after 5 seconds -->
+        <script>
+            setTimeout(function() {
+                const alertMessage = document.getElementById("alert-message");
+                if (alertMessage) {
+                    alertMessage.style.opacity = "0";  // Fade out
+                    setTimeout(function() {
+                        alertMessage.style.display = "none";  // Hide after fade-out
+                    }, 1000);  // Wait for the fade-out to complete before hiding the element
+                }
+            }, 5000);  // 5000ms = 5 seconds
+        </script>
+    <% } %>
+    
+    <%- include("./partials/contact") %>
+    
+   
+    <%- include("./partials/footer") %>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="/js/jquery-min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.js"></script>      
+    <script src="/js/jquery.nav.js"></script>    
+    <!-- <script src="/js/scrolling-nav.js"></script>     -->
+    <script src="/js/jquery.easing.min.js"></script>     
+    <!-- <script src="/js/nivo-lightbox.js"></script>      -->
+        
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>

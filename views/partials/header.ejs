@@ -1,0 +1,97 @@
+<!-- Header Section Start -->
+<header id="home" class="hero-area" style="background-image: url('/img/bg.webp'); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh;">
+ 
+  <div class="overlay">
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+    <div class="container">
+      <a  class="navbar-brand" style="font-size: 1.5rem; font-weight: bold; color: #fff;">Proviz School of AI</a> <!-- Logo text -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="lni-menu"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item"><a class="nav-link page-scroll" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link page-scroll" href="#services">About</a></li>  
+          <li class="nav-item"><a class="nav-link page-scroll" href="#features">Services</a></li>                                  
+          <li class="nav-item"><a class="nav-link page-scroll" href="#pricing">Pricing</a></li>     
+          <li class="nav-item"><a class="nav-link page-scroll" href="#team">Team</a></li>   
+          <li class="nav-item"><a class="btn btn-singin" href="#">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+
+  <!-- Hero Content Section -->
+  <div class="container">
+    <div class="row space-100 align-items-center">
+      <div class="col-lg-6 col-md-12 col-xs-12 offset-lg-6">
+        <div class="contents text-right">
+          <h1 class="head-title">
+            Empowering the Next Generation of 
+            <span class="text-highlight">AI Innovators</span>
+          </h1>
+          <p class="subtext">At Proviz School of AI, we believe in transforming passionate learners into leading professionals. Join us to innovate and lead the future of technology.</p>
+          <div class="header-button mt-4">
+            <a href="/application" class="btn btn-border-filled">Apply Now</a>
+            <a href="#about" class="btn btn-border page-scroll">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>            
+</header>
+<!-- Header Section End -->
+
+<!-- Styles -->
+<style>
+.hero-area {
+  color: white;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+}
+
+.overlay span {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  animation: pulse 5s infinite;
+}
+
+.overlay span:nth-child(1) { top: 20%; left: 10%; }
+.overlay span:nth-child(2) { bottom: 30%; right: 15%; }
+
+.head-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #A1FFCE, #FAFFD1); /* Mint Green to Soft Cream */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-highlight {
+  font-weight: bold;
+  color: #FFB3B3; /* Soft Red/Pink */
+    text-shadow: 0px 0px 10px rgba(255, 179, 179, 0.8);
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header-button .btn {
+  margin: 5px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+</style>

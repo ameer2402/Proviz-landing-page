@@ -14,7 +14,8 @@ This project is a full-stack landing page for **Proviz School of AI**, designed 
 - **SEO Optimized**: Basic SEO practices are applied, including metadata, descriptive headings, and alt text for images.
 - **No Admin Panel**: While an admin panel could be added for managing submissions, this feature has not been implemented.
 
-![Screenshot 2024-11-18 130412](https://github.com/user-attachments/assets/57063c47-f826-4b99-9b60-8cc0c38e03ec)
+![Screenshot 2024-11-18 130427](https://github.com/user-attachments/assets/b53f5f4e-f687-4ebc-8688-68e0eb975354)
+
 
 
 ## Technologies Used
